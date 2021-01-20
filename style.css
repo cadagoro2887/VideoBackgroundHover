@@ -50,7 +50,7 @@
     flex-direction: column;
   }
   .banner i.fa {
-    height: 50%;
+    height: 100%;
     line-height: 50vh;
     font-size: 50vw;
   }
