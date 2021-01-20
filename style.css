@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner a {
+  width: 100%;
+}
+.banner i.fa {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  font-size: 35vw;
+  text-align: center;
+  color: #000;
+  line-height: 100vh;
+  mix-blend-mode: screen;
+}
+
+.banner i.fa:hover {
+  color: rgba(255, 255, 255, 0.8);
+  background: #000;
+  transform: scale(1.1);
+  transition: all 0.4s ease;
+}
+
+@media (max-width: 798px) {
+  .banner {
+    flex-direction: column;
+  }
+  .banner i.fa {
+    height: 50%;
+    line-height: 50vh;
+    font-size: 50vw;
+  }
+}
